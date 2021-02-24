@@ -17,3 +17,13 @@ int test() {
   
 }
 ```
+
+Dart 的事件循环.
+ - MicroTask queue 微任务队列
+ - Event queue 事件队列 (鼠标单击、I/O消息等等事件)
+![img.png](event_cycle.png)
+
+Future  
+通常是异步任务。加入Event队列。  
+microtask() 会加入到 microtask 队列。  
+sync() 会比 microtask 队列中的还要先执行。  
