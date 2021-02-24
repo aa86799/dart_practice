@@ -27,3 +27,5 @@ Future
 通常是异步任务。加入Event队列。  
 microtask() 会加入到 microtask 队列。  
 sync() 会比 microtask 队列中的还要先执行。  
+
+Isolate 创建并发耗时任务。在Flutter中 可以用 compute()来创建。
